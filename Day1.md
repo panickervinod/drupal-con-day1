@@ -189,11 +189,9 @@ in bootstrap.ts , you have to call bootstrap.ts on the top level Components
 ** the spaces are important in typescript , tab is 4 spaces that can be configured in tslint.json
 
 
-Other points
+Other points to watch out.
 
 - Select Fields instead of Entities if you get todos rendered as objects
 - in todosettings the service use base64 encoded username and password
 - COR index page gave errors , to find syntax look up in
   - tail -f /Applications/MAMP/logs/php_error.log
-
-  
