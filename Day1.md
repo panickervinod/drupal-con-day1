@@ -87,3 +87,90 @@
      you set this by giving admin user name/ password
 
      This should get your web request to work
+
+
+     -- TODO a POST
+
+ Fetch token first
+
+ send out a POST
+
+ Body :
+
+     {
+   "_links":{
+     "type":{
+       "href":"http://localhost:8888/drupal-8.0.3/rest/type/node/todo"
+     }
+   },
+   "title":[
+     {
+       "value":"My second todo."
+     }
+   ],
+   "field_complete":[
+   {
+       "value": "0"
+   }
+ ]
+}
+
+There is bug with Authentication (8.0)
+
+using patch it has to be fixed
+
+'''
+swarad07 [12:28 PM]
+https://www.drupal.org/node/2228141
+Problem/Motivation Currently, the only way to add authentication to a REST View is through RouteSubscriberBase->alterRoutes(). We could add the Authentication setting to REST Views so users could select the supported authentication methods for a particular Views display. It would look like the following screenshot:
+
+[12:29]
+https://www.drupal.org/files/issues/add_authentication-2228141-93.patch
+
+'''
+
+
+git apply -v add_authentication-2228141-93.patch
+
+### Angular 2
+
+
+Supports Js, Typescript, Dart
+
+Why Typescript
+
+ Better overall readability
+
+ Typescript,
+
+ Has modules , each module is a file of its own
+ ```
+ import {Component} from 'angular2/core';
+
+ @Component({
+     selector: 'sample-app',
+     template: `<div class="sample">
+         <h1> Hello world, this is {{ name }} </h1>
+     </div>`
+ })
+ 
+ export class SampleComponent {
+     name: string;
+     constructor() {
+         this.name = 'Angular2 !';
+     }
+ }
+
+ ```
+
+ -Component is unique to angular 2 , not present in angular 1
+
+Components Metadata options
+
+-selector
+-template
+-templateUrl => give the path
+-providers
+-directives
+-style
+-styleUrls
