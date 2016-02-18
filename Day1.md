@@ -50,3 +50,40 @@
     CMS -> Endpoints -> Pages
 
     e.g [http://www.weather.com](http://www.weather.com) is an good example built on Drupal
+
+    ### Hands On TODO Application
+
+    -Install Drupal 8
+
+    -Create TODO content type
+
+      - added Todo
+      - added boolean complete
+
+
+    -Install admin toolbar
+
+    -Install rest ui
+
+    - nodejs already installed.
+
+    - hal_json , with self discovery  
+
+    - give permission
+       -- Patch is unique to php frameworks
+    - install DHC client
+
+    localhost:8888/drupal-8.0.3/node/1
+      => gets you a raw html
+
+    - localhost:8888/drupal-8.0.3/node/1?_format=hal_json
+
+    This will return 403 forbidden
+
+    -  you need to set permissions to content to enable this.
+
+    - set Authorization header as well
+
+     you set this by giving admin user name/ password
+
+     This should get your web request to work
