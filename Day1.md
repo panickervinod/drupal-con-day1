@@ -1,21 +1,23 @@
-Acquia
+## Drupal Workshops:
+
+### Acquia
 
 - Drupal 8 in a Day
 
-Blisstering Software
+### Blisstering Software
 
 - Building Front-end /Mobile Application using Headless Drupal 8
 
--Prateek Jain
--Swarad Mokal
--Aditya Ghan
+- Prateek Jain
+- Swarad Mokal
+- Aditya Ghan
 
-- Benifits of going Headless :
-
-
+### Benefits of going Headless :
 
 
-Considerations before going to Headless :
+
+
+### Considerations before going to Headless :
 
  - Routing : URLS , Clean URLS , Navigations
  - caching & aggregation : Page , Block, CSS , JS
@@ -24,7 +26,7 @@ Considerations before going to Headless :
  - Public API: Authentication
 
 
- Challenges :
+ ### Challenges :
  - Performance
  - SEO
  - Theme Layer and render pipeline
@@ -32,9 +34,9 @@ Considerations before going to Headless :
  - Security vulnerablity
 
 
-Architecture Considerations:
+### Architecture Considerations:
 
-Method :
+### Models :
 
 - Traditional:
      CMS -> Renderer -> Page
@@ -48,5 +50,3 @@ Method :
     CMS -> Endpoints -> Pages
 
     e.g [http://www.weather.com](http://www.weather.com) is an good example built on Drupal
-
-     
