@@ -132,6 +132,15 @@ https://www.drupal.org/files/issues/add_authentication-2228141-93.patch
 
 git apply -v add_authentication-2228141-93.patch
 
+```
+https://www.drupal.org/node/1869548#comment‐9365043
+http://enzolutions.com/articles/2015/05/26/how‐to‐enable‐cors‐in‐drupal‐8‐in‐
+non‐apache‐webservers/
+To allow Ajax requests from a different domain and take advantages of the new REST module more globally. W3C Draft: http://www.w3.org/TR/cors/
+
+```
+
+
 ### Angular 2
 
 
@@ -153,7 +162,7 @@ Why Typescript
          <h1> Hello world, this is {{ name }} </h1>
      </div>`
  })
- 
+
  export class SampleComponent {
      name: string;
      constructor() {
@@ -169,8 +178,22 @@ Components Metadata options
 
 -selector
 -template
--templateUrl => give the path
+-templateUrl => give the path of the template file
 -providers
 -directives
 -style
 -styleUrls
+
+in bootstrap.ts , you have to call bootstrap.ts on the top level Components
+
+** the spaces are important in typescript , tab is 4 spaces that can be configured in tslint.json
+
+
+Other points
+
+- Select Fields instead of Entities if you get todos rendered as objects
+- in todosettings the service use base64 encoded username and password
+- COR index page gave errors , to find syntax look up in
+  - tail -f /Applications/MAMP/logs/php_error.log
+
+  
